@@ -1,2 +1,3 @@
-data_set = load('BigDiamonds.Rda')
-save(data_set, file='diamonds.csv')
+input_data_set = load('BigDiamonds.Rda')
+data = get(input_data_set)
+write.csv(data, file='diamonds.csv')
